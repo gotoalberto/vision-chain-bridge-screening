@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="Geist, system-ui, sans-serif" class="dg"><rect x="0" y="0" width="720" height="300" rx="14" fill="#0b0b0b"/><defs><marker id="mff6a586303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff6a58"/></marker></defs>
+<defs><marker id="mf5b85a6303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f5b85a"/></marker></defs>
+<defs><marker id="m6ff7b66303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6ff7b6"/></marker></defs>
+<defs><marker id="m9095fd6303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9095fd"/></marker></defs>
+<defs><marker id="mf2f2f26303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f2f2f2"/></marker></defs>
+<text x="20" y="30" text-anchor="start" font-size="15" fill="#f2f2f2" font-weight="700">The bridge hook: three answers</text>
+<rect x="20" y="120" width="140" height="70" rx="10" fill="#161616" stroke="#5a5a5a" stroke-width="1.6"/>
+<text x="90.0" y="152.675" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">Deposit or</text>
+<text x="90.0" y="167.325" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">withdrawal</text>
+<rect x="205" y="110" width="170" height="90" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="290.0" y="145.8" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">OptimismPortal2</text>
+<text x="290.0" y="160.45" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">asks the hook</text>
+<text x="290.0" y="174.2" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">bridgeHook != 0</text>
+<rect x="430" y="115" width="130" height="80" rx="10" fill="#1a1b33" stroke="#9095fd" stroke-width="1.6"/>
+<text x="495.0" y="152.675" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">Hook</text>
+<text x="495.0" y="167.325" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">ComplianceModule</text>
+<line x1="160" y1="155" x2="203" y2="155" stroke="#f2f2f2" stroke-width="1.8" marker-end="url(#mf2f2f26303)"/>
+<line x1="375" y1="155" x2="428" y2="155" stroke="#9095fd" stroke-width="1.8" marker-end="url(#m9095fd6303)"/>
+<rect x="600" y="40" width="105" height="66" rx="10" fill="#11241c" stroke="#6ff7b6" stroke-width="1.6"/>
+<text x="652.5" y="70.675" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">proceed</text>
+<text x="652.5" y="85.325" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">as usual</text>
+<rect x="600" y="122" width="105" height="66" rx="10" fill="#2a2113" stroke="#f5b85a" stroke-width="1.6"/>
+<text x="652.5" y="152.675" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">hold</text>
+<text x="652.5" y="167.325" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">parked, frozen</text>
+<rect x="600" y="204" width="105" height="66" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="652.5" y="234.675" text-anchor="middle" font-size="14" fill="#f2f2f2" font-weight="700">reject</text>
+<text x="652.5" y="249.325" text-anchor="middle" font-size="11" fill="#a3a3a3" font-weight="400">reverts</text>
+<line x1="560" y1="135" x2="598" y2="75" stroke="#6ff7b6" stroke-width="1.8" marker-end="url(#m6ff7b66303)"/>
+<line x1="560" y1="155" x2="598" y2="155" stroke="#f5b85a" stroke-width="1.8" marker-end="url(#mf5b85a6303)"/>
+<line x1="560" y1="175" x2="598" y2="235" stroke="#ff6a58" stroke-width="1.8" marker-end="url(#mff6a586303)"/>
+<text x="290" y="240" text-anchor="middle" font-size="12" fill="#a3a3a3" font-weight="400">With bridgeHook = 0 the chain behaves</text>
+<text x="290" y="258" text-anchor="middle" font-size="12" fill="#a3a3a3" font-weight="400">exactly like any standard OP Stack chain</text></svg>

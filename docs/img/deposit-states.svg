@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="310" viewBox="0 0 720 310" font-family="Geist, system-ui, sans-serif" class="dg"><rect x="0" y="0" width="720" height="310" rx="14" fill="#0b0b0b"/><defs><marker id="mff6a586303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff6a58"/></marker></defs>
+<defs><marker id="m6ff7b66303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6ff7b6"/></marker></defs>
+<defs><marker id="mf2f2f26303" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f2f2f2"/></marker></defs>
+<text x="20" y="30" text-anchor="start" font-size="15" fill="#f2f2f2" font-weight="700">What a depositor sees</text>
+<rect x="15" y="125" width="110" height="60" rx="10" fill="#161616" stroke="#5a5a5a" stroke-width="1.6"/>
+<text x="70.0" y="152.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Sent</text>
+<text x="70.0" y="166.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">seconds</text>
+<rect x="165" y="125" width="120" height="60" rx="10" fill="#2a2113" stroke="#f5b85a" stroke-width="1.6"/>
+<text x="225.0" y="152.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Checking</text>
+<text x="225.0" y="166.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">p95 &lt; 10 min</text>
+<rect x="335" y="45" width="120" height="60" rx="10" fill="#141b2c" stroke="#7aa2ff" stroke-width="1.6"/>
+<text x="395.0" y="72.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">On its way</text>
+<text x="395.0" y="86.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">1 to 3 min</text>
+<rect x="540" y="45" width="150" height="60" rx="10" fill="#11241c" stroke="#6ff7b6" stroke-width="1.6"/>
+<text x="615.0" y="72.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Available</text>
+<text x="615.0" y="86.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">on L2</text>
+<rect x="335" y="210" width="120" height="60" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="395.0" y="237.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Under review</text>
+<text x="395.0" y="251.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">2 business days</text>
+<rect x="540" y="150" width="150" height="55" rx="10" fill="#11241c" stroke="#6ff7b6" stroke-width="1.6"/>
+<text x="615.0" y="175.475" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Released</text>
+<text x="615.0" y="188.875" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">minutes</text>
+<rect x="540" y="235" width="150" height="55" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="615.0" y="260.775" text-anchor="middle" font-size="12" fill="#f2f2f2" font-weight="700">Frozen</text>
+<text x="615.0" y="272.925" text-anchor="middle" font-size="9" fill="#a3a3a3" font-weight="400">stays in the module</text>
+<line x1="125" y1="155" x2="163" y2="155" stroke="#f2f2f2" stroke-width="1.8" marker-end="url(#mf2f2f26303)"/>
+<line x1="285" y1="140" x2="333" y2="80" stroke="#6ff7b6" stroke-width="1.8" marker-end="url(#m6ff7b66303)"/>
+<text x="290" y="105" text-anchor="middle" font-size="12" fill="#6ff7b6" font-weight="600" paint-order="stroke" stroke="#0b0b0b" stroke-width="4">clean</text>
+<line x1="285" y1="170" x2="333" y2="230" stroke="#ff6a58" stroke-width="1.8" marker-end="url(#mff6a586303)"/>
+<text x="285" y="220" text-anchor="middle" font-size="12" fill="#ff6a58" font-weight="600" paint-order="stroke" stroke="#0b0b0b" stroke-width="4">escalated</text>
+<line x1="455" y1="75" x2="538" y2="75" stroke="#f2f2f2" stroke-width="1.8" marker-end="url(#mf2f2f26303)"/>
+<line x1="455" y1="230" x2="538" y2="180" stroke="#6ff7b6" stroke-width="1.8" marker-end="url(#m6ff7b66303)"/>
+<text x="490" y="192" text-anchor="middle" font-size="11" fill="#6ff7b6" font-weight="600" paint-order="stroke" stroke="#0b0b0b" stroke-width="4">false positive</text>
+<line x1="455" y1="250" x2="538" y2="262" stroke="#ff6a58" stroke-width="1.8" marker-end="url(#mff6a586303)"/>
+<text x="495" y="282" text-anchor="middle" font-size="11" fill="#ff6a58" font-weight="600" paint-order="stroke" stroke="#0b0b0b" stroke-width="4">true match</text>
+<line x1="615" y1="148" x2="615" y2="107" stroke="#6ff7b6" stroke-width="1.8" marker-end="url(#m6ff7b66303)"/></svg>

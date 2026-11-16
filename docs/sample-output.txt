@@ -1,0 +1,48 @@
+Ran 3 tests for test/vision/BoundedHoldScenarios.t.sol:BoundedHoldScenarios
+[PASS] test_optionB1_screenerDown_holdExpires_anyoneReleases() (gas: 582946)
+  B1. Screener down: an unreviewed hold expires after 24 hours
+    [Retail sees] Deposit received on Ethereum. Checking it, at most 24 hours.
+    [Retail sees] No objection within 24 hours. Deposit sent to Vision Chain.
+[PASS] test_optionB2_sanctionedNeverExpires() (gas: 430833)
+  B2. Official list hit: the clock never runs out
+    [check] a deny list party stays frozen after a year
+[PASS] test_optionB3_escalatedCase_needsCompliance() (gas: 656543)
+  B3. KYT alert: the screener escalates, Compliance decides
+    [Retail sees] Deposit under review by our team.
+    [Retail sees] Review finished. Deposit sent to Vision Chain.
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 3.34s (158.09ms CPU time)
+Ran 9 tests for test/vision/VisionBridgeScenarios.t.sol:VisionBridgeScenarios
+[PASS] test_scenario1_allowlistedDeposit_proceeds() (gas: 216650)
+  1. Allowlisted bank deposits 10 ETH
+    [Bank sees] Deposit sent. Arrives on Vision Chain in the next L2 blocks (about 1 to 3 minutes).
+[PASS] test_scenario2_unknownCleanDeposit_heldThenCleared() (gas: 545833)
+  2. Unknown retail user deposits 1 ETH
+    [Retail sees] Deposit received on Ethereum. Checking it, this usually takes a few minutes.
+    [Retail sees] Check passed. Deposit sent to Vision Chain.
+[PASS] test_scenario3_sanctionedDeposit_frozen() (gas: 489647)
+  3. Sanctioned address deposits 5 ETH
+    [Sanctioned sees] Deposit received on Ethereum. It is under review.
+    [check] screener and third parties cannot release it; no refund function exists
+[PASS] test_scenario3b_sanctionedForcedTransaction_held() (gas: 220384)
+  3b. Sanctioned address forces an L2 call with no value
+    [Sanctioned sees] Transaction received on Ethereum. It is under review.
+[PASS] test_scenario3c_depositToSanctionedRecipient_held() (gas: 226297)
+  3c. Allowlisted bank deposits to a sanctioned L2 recipient
+    [Bank sees] Deposit under review.
+[PASS] test_scenario4_falsePositive_released() (gas: 683643)
+  4. False positive: release after review
+    [User sees] Deposit under review.
+    [User sees] Review finished. Deposit sent to Vision Chain, to the address you chose.
+    [check] the item cannot be redirected to another recipient
+[PASS] test_scenario5_sanctionedErc20Deposit_tokensFrozen() (gas: 1200047)
+  5. Sanctioned address bridges 100 tokens through the L1StandardBridge
+    [Sanctioned sees] Token deposit under review.
+[PASS] test_scenario6_governanceBypass() (gas: 258590)
+  6. ProxyAdmin owner deposits an L2 upgrade
+    [check] governance deposits are not screened (documented exception)
+[PASS] test_scenario7_screenerOutage_disableSwitch() (gas: 432574)
+  7. Screener outage and the disable switch
+    [Retail sees] Deposit received on Ethereum. Checking it (delayed).
+    [check] disable lets new items through and keeps held items held
+Suite result: ok. 9 passed; 0 failed; 0 skipped; finished in 3.34s (179.13ms CPU time)
+Ran 2 test suites in 3.34s (6.68s CPU time): 12 tests passed, 0 failed, 0 skipped (12 total tests)

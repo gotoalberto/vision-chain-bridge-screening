@@ -1,0 +1,17 @@
+name: scenarios
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  scenarios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: v1.8.3
+      - name: Run the bridge screening scenarios
+        run: ./run.sh

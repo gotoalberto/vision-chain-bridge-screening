@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" font-family="Geist, system-ui, sans-serif" class="dg"><rect x="0" y="0" width="720" height="260" rx="14" fill="#0b0b0b"/><text x="20" y="30" text-anchor="start" font-size="15" fill="#f2f2f2" font-weight="700">Option B: bounded holds</text>
+<line x1="60" y1="130" x2="680" y2="130" stroke="#5a5a5a" stroke-width="2"/>
+<circle cx="60" cy="130" r="6" fill="#9095fd"/>
+<text x="60" y="160" text-anchor="middle" font-size="12" fill="#a3a3a3" font-weight="400">held</text>
+<circle cx="370" cy="130" r="6" fill="#9095fd"/>
+<text x="370" y="160" text-anchor="middle" font-size="12" fill="#a3a3a3" font-weight="400">+12 h</text>
+<circle cx="680" cy="130" r="6" fill="#9095fd"/>
+<text x="680" y="160" text-anchor="middle" font-size="12" fill="#a3a3a3" font-weight="400">+24 h</text>
+<rect x="60" y="55" width="290" height="50" rx="10" fill="#11241c" stroke="#6ff7b6" stroke-width="1.6"/>
+<text x="205.0" y="77.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Screener clears</text>
+<text x="205.0" y="91.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">released within minutes</text>
+<rect x="440" y="55" width="240" height="50" rx="10" fill="#2a2113" stroke="#f5b85a" stroke-width="1.6"/>
+<text x="560.0" y="77.975" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Nobody escalated</text>
+<text x="560.0" y="91.375" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">anyone may release</text>
+<rect x="60" y="185" width="290" height="55" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="205.0" y="210.475" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Deny list hit</text>
+<text x="205.0" y="223.875" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">never expires</text>
+<rect x="390" y="185" width="290" height="55" rx="10" fill="#2a1714" stroke="#ff6a58" stroke-width="1.6"/>
+<text x="535.0" y="210.475" text-anchor="middle" font-size="13" fill="#f2f2f2" font-weight="700">Escalated case</text>
+<text x="535.0" y="223.875" text-anchor="middle" font-size="10" fill="#a3a3a3" font-weight="400">only Compliance releases</text></svg>
