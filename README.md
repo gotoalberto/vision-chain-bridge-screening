@@ -76,6 +76,22 @@ A flagged user sees "under review" for as long as it lasts, with no reason given
 
 With `VisionPolicyV1`, a screener outage leaves Compliance two choices: hold everyone indefinitely or flip `disable`, which also lets deny list addresses through. `BoundedHoldPolicy` adds a middle path on the same module and the same portal. A hold nobody has escalated can be released by anyone after 24 hours. Deny list hits and escalated cases never expire, so every indefinite freeze is a recorded human decision. The risk is that an unreviewed deposit passes after a 24 hour outage. That call belongs to Compliance.
 
+### Where the code lives
+
+The hook itself is Optimism's code. This repository adds the scenarios and the alternative policy, and pins everything to the head of PR #24033 (`403dce99d2`).
+
+| What | File |
+|---|---|
+| Portal asks the hook on deposits, holds and commits the item | [`OptimismPortal2.sol` L928 to L950](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/L1/OptimismPortal2.sol#L928-L950) |
+| Portal asks the hook when a withdrawal is finalised | [`OptimismPortal2.sol` L724 to L752](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/L1/OptimismPortal2.sol#L724-L752) |
+| Completing a held item, only the exact committed one | [`OptimismPortal2.sol` L979 to L1000](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/L1/OptimismPortal2.sol#L979-L1000) |
+| ERC20 escrow moved to the module and back | [`L1StandardBridge.sol` `holdERC20` and `restoreERC20`](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/L1/L1StandardBridge.sol#L298-L340) |
+| Hook interface | [`IBridgeHook.sol`](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/interfaces/L1/IBridgeHook.sol) |
+| The hook: custody, verdicts, `disable` | [`ComplianceModule.sol`](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/compliance/ComplianceModule.sol) |
+| Vision's reference policy | [`VisionPolicyV1.sol`](https://github.com/ethereum-optimism/optimism/blob/403dce99d2ad2d95ca929f6e77472f8f5a3fb26b/packages/contracts-bedrock/src/compliance/VisionPolicyV1.sol) |
+| Option B policy | [`test/vision/BoundedHoldPolicy.sol`](test/vision/BoundedHoldPolicy.sol) |
+| Scenarios | [`test/vision/VisionBridgeScenarios.t.sol`](test/vision/VisionBridgeScenarios.t.sol), [`test/vision/BoundedHoldScenarios.t.sol`](test/vision/BoundedHoldScenarios.t.sol) |
+
 ## Scenarios
 
 | # | Scenario | Result |
